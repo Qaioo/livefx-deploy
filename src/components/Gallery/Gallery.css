@@ -1,0 +1,15 @@
+@import "yet-another-react-lightbox/styles.css";
+
+#gallery {
+    padding: 1.2em;
+    background-color: #3a3939e3;
+}
+
+.react-photo-album--photo {
+    transition: all 0.4s ease;
+}
+
+.react-photo-album--photo:hover {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}

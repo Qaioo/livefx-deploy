@@ -1,0 +1,108 @@
+.contact {
+    margin: 0;
+    background-color: #0d0d0d;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.95em;
+    letter-spacing: 0.05em;
+    line-height: 1.25em;
+    padding: 2.25em 0;
+}
+
+.short-contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2em;
+}
+
+.phone-box {
+    margin: 0 20em;
+}
+
+.adress-box {
+    padding-right: 2em;
+}
+
+.phone-icon {
+    height: 2em;
+    width: 2em;
+}
+
+.email-icon {
+    height: 2em;
+    width: 2em;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .phone-number{} */
+
+.icon-filler {
+    margin-right: 1em;
+    padding: 1em;
+    border-radius: 5em;
+    background-color: aliceblue;
+}
+
+.socials-contact {
+    display: none;
+}
+
+@media (width <= 1366px) /* laptop */ {
+    .phone-box {
+        margin: 0 8em;
+    }
+
+    .icon-filler {
+        display: none;
+    }
+}
+
+@media (width <= 990px) /* tablet */ {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em 0;
+    }
+
+    .info-box {
+        margin: 0;
+        padding: 1.2em 0;
+    }
+    
+    .socials-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 2.2em;
+        width: 30%;
+    }
+
+}
+
+@media (width <= 768px) /* tablet */ {
+    .socials-contact {
+        width: 45%;
+    }
+
+    .socialIcons-contact:hover {
+        filter: brightness(70%);
+    }
+}
+
+@media (width <= 576px) /* mobile */ {
+    .socials-contact {
+        width: 60%;
+    }
+}

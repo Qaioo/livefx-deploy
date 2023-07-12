@@ -1,0 +1,123 @@
+.introContainer {
+    height: 100svh;
+    /* background-image: url(/intro/IMG_9407.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.caption-box {
+    color: white;
+    background-color: rgba(13,13,13, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: .7em;
+    padding: 1em 2em;
+    border-radius: 2em;
+    margin-top: 3em;
+}
+
+.captionTitle {
+    font-weight: 700;
+    font-size: 2.25em;
+}
+
+.captionText {
+    font-weight: 400;
+    font-size: 1.35em;
+    letter-spacing: 0.03em;
+}
+
+@media (width <= 1366px) /* laptop */ {
+    .captionTitle {
+        font-size: 1.8em;
+    }
+
+    .captionText {
+        font-size: 1.3em;
+    }
+}
+
+@media (width <= 990px) /* tablet */ {
+    .captionTitle {
+        font-size: 1.55em;
+    }
+
+    .captionText {
+        font-size: 1.1em;
+    }  
+}
+
+@media (width <= 768px) /* tablet */ {
+    .captionTitle {
+        font-size: 1.25em;
+    }
+
+    .captionText {
+        font-size: 0.9em;
+    }
+
+    .introContainer {
+        height: 50svh;
+    }
+}
+
+@media (width <= 768px) and (height <= 375px)/* tablet */ {
+
+    .introContainer {
+        height: 80svh;
+    }
+}
+
+@media (width <= 576px) /* mobile */ {
+    .captionTitle {
+        font-size: 0.95em;
+    }
+
+    .captionText {
+        font-size: 0.8em;
+        letter-spacing: 0.05em;
+    }
+
+    .caption-box {
+        padding: 0.5em 1em;
+        line-height: 0.3em;
+        margin-bottom: 4.5em;
+    }
+
+    .introContainer {
+        height: 92svh;
+        justify-content: flex-end;
+    }
+}
+
+@media (width <= 413px) /* mobile */ { 
+    .captionTitle {
+        font-size: 0.89em;
+    }
+
+    .caption-box {
+        margin-bottom: 5.5em;
+    }
+}
+
+@media (width <= 320px) /* mobile */ { 
+    .captionTitle {
+        font-size: 0.78em;
+    }
+
+    .captionText {
+        font-size: 0.68em;
+    }
+
+    .caption-box {
+        padding: 0.8em 1em;
+        margin-bottom: 5em;
+    }
+}
